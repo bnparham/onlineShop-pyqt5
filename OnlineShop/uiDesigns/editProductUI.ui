@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QDialog" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1083</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#mainWindow{
+background-color : #fff
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>20</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;B Koodak&quot;;</string>
+   </property>
+   <property name="text">
+    <string>نام محصول : </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="productName_input">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>20</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#productName_input{
+border : 1px solid #b1afaf;
+border-radius : 10%;
+font: 18pt &quot;Century Gothic&quot;;
+}
+#productName_input:focus{
+border : 1px solid #df2569;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>110</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;B Koodak&quot;;</string>
+   </property>
+   <property name="text">
+    <string>قیمت : </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="productPrice_input">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>100</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#productPrice_input{
+border : 1px solid #b1afaf;
+border-radius : 10%;
+font: 18pt &quot;Century Gothic&quot;;
+}
+#productPrice_input:focus{
+border : 1px solid #df2569;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="productDate_input">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>180</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#productDate_input{
+border : 1px solid #b1afaf;
+border-radius : 10%;
+font: 18pt &quot;Century Gothic&quot;;
+}
+#productDate_input:focus{
+border : 1px solid #df2569;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>190</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;B Koodak&quot;;</string>
+   </property>
+   <property name="text">
+    <string>تاریخ : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>360</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;B Koodak&quot;;</string>
+   </property>
+   <property name="text">
+    <string>فروشنده :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="productRandomID_input">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>260</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#productRandomID_input{
+border : 1px solid #b1afaf;
+border-radius : 10%;
+font: 18pt &quot;Century Gothic&quot;;
+}
+#productRandomID_input:focus{
+border : 1px solid #df2569;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>260</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;B Koodak&quot;;</string>
+   </property>
+   <property name="text">
+    <string>شناسه محصول :</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="confirmEdit_btn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>570</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#confirmEdit_btn{
+border-radius : 10%;
+background-color: #df2569;
+color : #fff;
+font: 12pt &quot;IRANSans&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>ثبت ویرایش</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>30</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;B Koodak&quot;;</string>
+   </property>
+   <property name="text">
+    <string>توضیح محصول :</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="productDetails_input">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>491</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#productDetails_input{
+border : 1px solid #b1afaf;
+font: 18pt &quot;Century Gothic&quot;;
+}
+#productDetails_input:focus{
+border : 1px solid #df2569;
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="saler_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>360</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="placeholderText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>470</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;B Koodak&quot;;</string>
+   </property>
+   <property name="text">
+    <string>دسته بندی :</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cat_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>460</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="placeholderText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="salerName_lbl">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>360</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>شرکت سهام</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="catName_lbl">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>470</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>محصولات</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="salerName_lbl_2">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>320</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ویرایش :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="salerName_lbl_3">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>420</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ویرایش :</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

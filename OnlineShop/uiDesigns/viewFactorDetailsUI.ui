@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QDialog" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1127</width>
+    <height>881</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#mainWindow{
+background-color : #fff
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>10</y>
+     <width>441</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 28pt &quot;B narm&quot;;</string>
+   </property>
+   <property name="text">
+    <string>مشاهده جزئیات فاکتور خرید</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="factorIndex_lbl">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>301</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>شماره فاکتور :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="date_lbl">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>301</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>تاریخ ثبت سفارش :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="totalPrice_lbl">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>830</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>مجموع پرداخت :</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>370</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid #000;
+background-color: rgb(191, 204, 203);</string>
+   </property>
+   <property name="text">
+    <string>نام محصول</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>370</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid #000;
+background-color: rgb(191, 204, 203);</string>
+   </property>
+   <property name="text">
+    <string>کد محصول</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>370</y>
+     <width>131</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid #000;
+background-color: rgb(191, 204, 203);</string>
+   </property>
+   <property name="text">
+    <string>نام فروشنده</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_9">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>370</y>
+     <width>131</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid #000;
+background-color: rgb(191, 204, 203);</string>
+   </property>
+   <property name="text">
+    <string>با اعمال تخفیف</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>370</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid #000;
+background-color: rgb(191, 204, 203);</string>
+   </property>
+   <property name="text">
+    <string>کد تخفیف</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>370</y>
+     <width>81</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid #000;
+background-color: rgb(191, 204, 203);</string>
+   </property>
+   <property name="text">
+    <string>هزینه کل</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>370</y>
+     <width>131</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid #000;
+background-color: rgb(191, 204, 203);</string>
+   </property>
+   <property name="text">
+    <string>قیمت (تومان)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>370</y>
+     <width>81</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid #000;
+background-color: rgb(191, 204, 203);</string>
+   </property>
+   <property name="text">
+    <string>ردیف</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>370</y>
+     <width>91</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid #000;
+background-color: rgb(191, 204, 203);</string>
+   </property>
+   <property name="text">
+    <string>تعداد</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="count_lbl">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>160</y>
+     <width>281</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>تعداد کالای خریداری شده : 3 </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>260</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 18pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>شهر :</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>200</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 18pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>آدرس :</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="city_lbl">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>260</y>
+     <width>461</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 18pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>محل نوشتن اسم شهر</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Adress_lbl">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>200</y>
+     <width>381</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 18pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>نشانی</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="state_lbl">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>200</y>
+     <width>451</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 18pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>محل نوشتن اسم استان</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>200</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 18pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>استان : </string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="orderName_lbl">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>80</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>سفارش به نام : علیرضا حسینی</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mobile_lbl">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>120</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>شماره تماس : 09124567891</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>55</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/backIcon2.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_btn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : transparent;
+border : none</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

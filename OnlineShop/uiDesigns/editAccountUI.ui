@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>587</width>
+    <height>656</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#fff</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>90</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>نام کاربری : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>190</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ایمیل : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>280</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>رمز عبور قدیمی : </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="confirmEdit_btn">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>470</y>
+     <width>421</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#confirmEdit_btn{
+border-radius : 10%;
+background-color:#fff ;
+color : #df2569;
+font: 17pt &quot;IRANSans&quot;;
+border : 1px solid #df2569;
+}</string>
+   </property>
+   <property name="text">
+    <string>ثبت ویرایش</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>360</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>رمز عبور جدید :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edit_userName_input">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#edit_userName_input{
+border : 1px solid #b1afaf;
+border-radius : 10%;
+font: 18pt &quot;Century Gothic&quot;;
+}
+#edit_userName_input:focus{
+border : 1px solid #df2569;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edit_email_input">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#edit_email_input{
+border : 1px solid #b1afaf;
+border-radius : 10%;
+font: 18pt &quot;Century Gothic&quot;;
+}
+#edit_email_input:focus{
+border : 1px solid #df2569;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edit_oldPassword_input">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#edit_oldPassword_input{
+border : 1px solid #b1afaf;
+border-radius : 10%;
+font: 18pt &quot;Century Gothic&quot;;
+}
+#edit_oldPassword_input:focus{
+border : 1px solid #df2569;
+}</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edit_newPassword_input">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#edit_newPassword_input{
+border : 1px solid #b1afaf;
+border-radius : 10%;
+font: 18pt &quot;Century Gothic&quot;;
+}
+#edit_newPassword_input:focus{
+border : 1px solid #df2569;
+}</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_btn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>51</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : transparent</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="back_lbl">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>51</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10%</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/backIcon2.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="wrongOldPass_lbl">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>550</y>
+     <width>411</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10%</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/WrongOldPass.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="okEdit_lbl">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>550</y>
+     <width>411</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10%</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/okEdit.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backToHome_btn">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>470</y>
+     <width>421</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#backToHome_btn{
+border-radius : 10%;
+background-color: #df2569 ;
+color :#fff;
+font: 17pt &quot;IRANSans&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>بازگشت به صفحه اصلی</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="shouldEnterNewPass_lbl">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>550</y>
+     <width>411</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10%</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/shouldEnterNewPass.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="notEqualPass_lbl">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>550</y>
+     <width>411</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10%</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/oldpassNotEqualNew.jpg</pixmap>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>confirmEdit_btn</zorder>
+  <zorder>label_4</zorder>
+  <zorder>edit_userName_input</zorder>
+  <zorder>edit_email_input</zorder>
+  <zorder>edit_oldPassword_input</zorder>
+  <zorder>edit_newPassword_input</zorder>
+  <zorder>back_lbl</zorder>
+  <zorder>back_btn</zorder>
+  <zorder>wrongOldPass_lbl</zorder>
+  <zorder>okEdit_lbl</zorder>
+  <zorder>backToHome_btn</zorder>
+  <zorder>shouldEnterNewPass_lbl</zorder>
+  <zorder>notEqualPass_lbl</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

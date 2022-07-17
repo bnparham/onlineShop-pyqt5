@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>587</width>
+    <height>831</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#fff</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>110</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>نام کاربری : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>200</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ایمیل : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>280</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>رمز عبور : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="show_userName">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>431</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: italic 18pt &quot;Century Gothic&quot;;</string>
+   </property>
+   <property name="text">
+    <string>UserName</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="show_email">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>451</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: italic 18pt &quot;Century Gothic&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Email</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="show_password">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>441</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: italic 18pt &quot;Century Gothic&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Password</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="edit_btn">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>620</y>
+     <width>421</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#edit_btn{
+border-radius : 10%;
+background-color: #df2569;
+color : #fff;
+font: 17pt &quot;IRANSans&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>ویرایش اطلاعات</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>360</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>تاریخ ثبت نام :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="show_date">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>401</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: italic 18pt &quot;Century Gothic&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Date</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>261</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 28pt &quot;B narm&quot;;</string>
+   </property>
+   <property name="text">
+    <string>اطلاعات حساب</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>510</y>
+     <width>291</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>موجودی کیف پول (تومان) : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="show_balance">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>510</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: italic 18pt &quot;Century Gothic&quot;;</string>
+   </property>
+   <property name="text">
+    <string>balance</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="increaseBalance_btn">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>690</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#increaseBalance_btn{
+background-color : transparent;
+border:none
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>440</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>شناسنه کاربر :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="show_randomID">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>440</y>
+     <width>401</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: italic 18pt &quot;Century Gothic&quot;;</string>
+   </property>
+   <property name="text">
+    <string>RandomID</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>690</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/increasePay.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>690</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/factorIcon.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="factor_btn">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>690</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#factor_btn{
+background-color : transparent;
+border:none
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>750</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/myComments.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="userComments_btn">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>750</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#userComments_btn{
+background-color : transparent;
+border:none
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_8</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>show_userName</zorder>
+  <zorder>show_email</zorder>
+  <zorder>show_password</zorder>
+  <zorder>edit_btn</zorder>
+  <zorder>label_4</zorder>
+  <zorder>show_date</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>show_balance</zorder>
+  <zorder>increaseBalance_btn</zorder>
+  <zorder>label_7</zorder>
+  <zorder>show_randomID</zorder>
+  <zorder>label_9</zorder>
+  <zorder>factor_btn</zorder>
+  <zorder>label_10</zorder>
+  <zorder>userComments_btn</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

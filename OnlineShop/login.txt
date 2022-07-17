@@ -1,0 +1,7 @@
+user:
+email : aa@email.com
+pass : 1234
+-----
+operator : 
+email : admin@email.com
+pass : admin

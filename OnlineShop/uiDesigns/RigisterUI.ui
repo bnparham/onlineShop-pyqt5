@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>loginUI</class>
+ <widget class="QDialog" name="loginUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>536</width>
+    <height>834</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#loginUI{
+	background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>431</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 28pt &quot;B narm&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ایجاد حساب کاربری جدید</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>160</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;IRANSans&quot;;</string>
+   </property>
+   <property name="text">
+    <string>نام کاربری</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="username_input">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>220</y>
+     <width>421</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#username_input{
+border : 1px solid #b1afaf;
+border-radius : 10%;
+font: 18pt &quot;Century Gothic&quot;;
+}
+#username_input:focus{
+border : 1px solid #df2569;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="email_input">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>340</y>
+     <width>421</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#email_input{
+border : 1px solid #b1afaf;
+border-radius : 10%;
+font: 18pt &quot;Century Gothic&quot;;
+}
+#email_input:focus{
+border: 1px solid #df2569;
+}</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Normal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>280</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;IRANSans&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ایمیل</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rigister_btn">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>650</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#rigister_btn{
+border-radius : 10%;
+background-color: #df2569;
+color : #fff;
+font: 17pt &quot;IRANSans&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>ثبت نام</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>390</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;IRANSans&quot;;</string>
+   </property>
+   <property name="text">
+    <string>رمز عبور</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pass_input">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>450</y>
+     <width>421</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pass_input{
+border : 1px solid #b1afaf;
+border-radius : 10%;
+font: 18pt &quot;Century Gothic&quot;;
+}
+#pass_input:focus{
+border: 1px solid #df2569;
+}</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="repass_input">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>560</y>
+     <width>421</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#repass_input{
+border : 1px solid #b1afaf;
+border-radius : 10%;
+font: 18pt &quot;Century Gothic&quot;;
+}
+#repass_input:focus{
+border: 1px solid #df2569;
+}</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>500</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;IRANSans&quot;;</string>
+   </property>
+   <property name="text">
+    <string>تکرار رمز عبور</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clear_btn">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>650</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#clear_btn{
+border-radius : 10%;
+background-color: #fff;
+color : #df2569;
+font: 17pt &quot;IRANSans&quot;;
+border : 1px solid #df2569
+}</string>
+   </property>
+   <property name="text">
+    <string>پاک کردن</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="back_lbl">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>51</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10%</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/backIcon2.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_btn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>51</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : transparent</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="wrongFields_lbl">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>730</y>
+     <width>411</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10%</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/wrongfeilds.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="okRigister_lbl">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>730</y>
+     <width>411</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10%</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/okRigister.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="wrongEmailUsed_lbl">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>730</y>
+     <width>411</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10%</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/WrongEmailUsed.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="wrongRePass_lbl">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>730</y>
+     <width>411</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10%</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/wrongRePass.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="wrongPersianChar_lbl">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>730</y>
+     <width>411</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10%</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Tools/imgs/wrongPersianChar.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="goToHome_btn">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>650</y>
+     <width>421</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#goToHome_btn{
+border-radius : 10%;
+background-color: #df2569;
+color : #fff;
+font: 17pt &quot;IRANSans&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>برو به صفحه اصلی</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
